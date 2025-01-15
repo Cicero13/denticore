@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NSKJD38R');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noimageindex, nofollow, nosnippet">
+    <meta name="description" content="DentiCore - Text Presentation">
+    <title>DentiCore - Text Presentation</title>
+    <link rel="icon" type="image/png" href="https://denticore24.com//statics/img/favicon.png">
+
+    <style>
+        @font-face {
+            font-family: main-font;
+            src: url("https://denticore24.com//statics/fonts/Quicksand-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: bold-font;
+            src: url("https://denticore24.com//statics/fonts/Quicksand-Bold.ttf");
+        }
+
+        @font-face {
+            font-family: light-font;
+            src: url("https://denticore24.com//statics/fonts/Quicksand-Light.ttf");
+        }
+
+        @font-face {
+            font-family: medium-font;
+            src: url("https://denticore24.com//statics/fonts/Quicksand-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: semi-bold-font;
+            src: url("https://denticore24.com//statics/fonts/Quicksand-SemiBold.ttf");
+        }
+
+        @font-face {
+            font-family: roboto-bold;
+            src: url("https://denticore24.com//statics/fonts/RobotoCondensed-Bold.ttf");
+        }
+
+        * {
+            --background-color: white;
+            --main-font-color: black;
+            --main-hover-color: lightgrey;
+            --main-font-family: main-font, Roboto, "Helvetica Neue", Arial, sans-serif;
+
+            /* font sizes */
+            --font-large: 2rem;
+            --font-medium: 1.5rem;
+            --font-normal: 1rem;
+            --font-small: 0.5rem;
+
+            /* font colors*/
+            --accent-color-light: green;
+            --accent-color-hard: red;
+            --accent-color-hard-contrast: white;
+
+            /* FOOTER colors*/
+            --footer-background-color: black;
+            --copywrite-background-color: darkgray;
+            --footer-font-color: gray;
+            --footer-hover-color: var(--main-hover-color);
+
+
+            /* PRICE BOX */
+            --color-dark: #3d56b0;
+            --color-light: #2fb3c5;
+            --references-clickable: auto;
+
+            /* COUNTDOWN TIMER */
+            --countdown-title-color: red;
+            --countdown-timer-color: orange;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 900;
+            display: block;
+        }
+
+        .modal-cookes {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 90%;
+            max-width: 500px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            z-index: 1000;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-cookes.highlight {
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+            transform: scale(1.05);
+        }
+
+        .modal-cookes button {
+            padding: 10px 15px;
+            font-size: var(--font-normal);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cookie-accept {
+            background-color: var(--accent-color-light);
+            color: #fff;
+        }
+
+        .cookie-decline {
+            background-color: var(--accent-color-hard);
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://denticore24.com//statics/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://denticore24.com//statics/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://denticore24.com//statics/css/webfont.css">
+
+    <script src="https://denticore24.com//statics/js/statics_js.php?static=https://denticore24.com/"></script>
+    <script src="https://static.denticore24.com//statics/statics.js" baseurl="https://denticore24.com//"></script>
+    <script src="https://static.denticore24.com//statics/N2O.js" baseurl="https://denticore24.com//"></script>
+
+    <!-- Begin of Digistore24 Trusted Badge Code -->
+    <script>
+        window.addEventListener("load", function () {
+            var script = document.createElement('script');
+            script.src = "https://www.digistore24.com/trusted-badge/30631/vgz2GAf65Ud03zL/salespage";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        });
+    </script>
+    <!-- End of Digistore24 Trusted Badge Code -->
+
+    <script src="https://www.digistore24.com/service/digistore.js"></script>
+    <script type="text/javascript">
+        digistorePromoPixel(539178);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row dark-purple-bg py-2 py-lg-4">
+            <div class="container py-2 py-md-0">
+
+
+                <section class="top-nav ">
+                    <div>
+                        <img src="https://denticore24.com//statics/img/logo_white.png"
+                            class=" img-fluid d-block  img-fluid d-block " style="max-width:228px;">
+                    </div>
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <ul class="menu">
+
+                        <li class="justify-content-sm-start hov align-self-md-center pl-4 pl-lg-0"><a
+                                href="#">Ingredients</a></li>
+                        <li class="justify-content-sm-start hov align-self-md-center pl-4 pl-lg-0"><a href="#">FREE
+                                Bonuses</a></li>
+                        <li class="justify-content-sm-start hov align-self-md-center pl-4 pl-lg-0"><a href="#">FAQ</a>
+                        </li>
+                        <li class="justify-content-sm-start hov align-self-md-center pl-4 pl-lg-0">
+                            <a href="#">
+                                <img src="https://denticore24.com//statics/img/order-now.png"
+                                    class="order-now-button img-fluid d-block">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <script>
+                    function hideMenu() {
+                        document.getElementById("menu-toggle").checked = false;
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="light-purple-bg">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="py-4"></div>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <img src="https://denticore24.com//statics/img/tsl-main.png" class="img-fluid d-block mx-auto">
+                    </div>
+                    <div class="col-12 col-lg-8 pt-md-0 pt-3">
+                        <h2 class="" style="font-size:37px;"><b style="color: white;"> The Unique Dental Solution That
+                                Supports Healthy Teeth & Oxygenates Gums</b>
+
+                        </h2>
+                        <p class="text-white medium pt-2 hero">DentiCore is formulated to support the proper oxygenation
+                            of the gums and tooth tissues to maintain them nourished and healthy.
+                            The product also works by deep cleansing your airways of bad bacteria,
+                            preventing them from reaching your mouth and doing more damage.
+                        </p>
+                        <div class="pt-md-0 pt-3"></div>
+                        <img src="https://denticore24.com//statics/img/certifications_new.png"
+                            class="img-fluid d-block  mt-4" style="width:500px;">
+                    </div>
+                </div>
+            </div>
+            <div class="py-4"></div>
+            <a href="#"><img src="https://denticore24.com//statics/img/buy-now2.png"
+                    class="buy-button6 img-fluid d-block pl-lg-2 mx-auto " alt=""></a>
+        </div>
+    </div>
+
+    <div class="dark-purple-bg">
+        <div class="container-fluid">
+            <div class="row py-2">
+                <div class="container">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <img src="https://denticore24.com//statics/img/certifications_new.png"
+                            class="img-fluid d-block mx-auto py-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper position-relative overflow-hidden">
+            <div class="footer-top-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12" style="padding-left: 0px;padding-right:0px;">
+                            <div class="footer-menu">
+                                <ul class="pt-2 px-md-0 px-3">
+                                    <!--  <li class="footer-menu-links"><a href="https://denticore24.com//index.php" target="_blank">Home</a></li>
+                  <li class="footer-menu-links"><a href="https://denticore24.com//text.php?#start-now">Get Started</a></li>-->
+                                    <li class="footer-menu-links"><a href="https://denticore24.com//help/contact-us.php"
+                                            target="_blank">Contact</a></li>
+                                    <li class="footer-menu-links"><a href="https://denticore24.com//help/references.php"
+                                            target="_blank">References</a></li>
+                                    <li class="footer-menu-links"><a href="https://denticore24.com//help/terms.php"
+                                            target="_blank">Terms Of Use</a></li>
+                                    <li class="footer-menu-links"><a href="https://denticore24.com//help/disclaimer.php"
+                                            target="_blank">Disclaimer</a></li>
+                                    <li class="footer-menu-links"><a href="https://denticore24.com//help/privacy.php"
+                                            target="_blank">Privacy Policy</a></li>
+                                    <li class="footer-menu-links"><a href="https://denticore24.com//help/shipping.php"
+                                            target="_blank">Shipping Policy</a></li>
+                                    <li class="footer-menu-links"><a href="https://denticore24.com//help/refunds.php"
+                                            target="_blank">Refund Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-bg">
+                <div class="copyright py-4">
+                    <div class="text-center" style="font-size:16px;">Copyright &copy; 2025
+                        <b><!--<a  href="https://denticore24.com/"></a>-->DentiCore</b> | All Rights Reserved
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSKJD38R" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal-cookes">
+            <h2>Cookie Permission</h2>
+            <p>We use cookies to improve user experience and analyze website traffic. Do you agree to the use of cookies?</p>
+           
+            <div>
+                <button class="cookie-accept" onclick="acceptCookies()">Allow</button>
+                <button class="cookie-decline" onclick="declineCookies()">Deny</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = document.getElementById("modal");
+            const modalContent = modal.querySelector(".modal-cookes");
+            const closeModalButton = document.getElementById("closeModal");
+
+            // Função para adicionar destaque ao modal
+            const highlightModal = () => {
+                modalContent.classList.add("highlight");
+                setTimeout(() => {
+                    modalContent.classList.remove("highlight");
+                }, 300);
+            };
+
+            // Destacar modal ao clicar fora do conteúdo
+            modal.addEventListener("click", (event) => {
+                if (!modalContent.contains(event.target)) {
+                    highlightModal();
+                }
+            });
+        });
+
+        function acceptCookies() {
+            // Lógica para aceitar cookies
+            window.location.href = "https://denticore24.com/text.php#aff=CiceroMatheus&cam=";
+            console.log('Cookies aceitos.');
+        }
+
+        function declineCookies() {
+            // Lógica para recusar cookies
+            window.location.href = "https://denticore24.com/text.php#aff=CiceroMatheus&cam=";
+            console.log('Cookies aceitos.');
+        }
+
+    </script>
+
+</body>
+
+</html>
